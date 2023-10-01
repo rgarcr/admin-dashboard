@@ -94,53 +94,11 @@ header h1{
     font-size: calc(30px + 0.390625vw);
 }
 
-.dash-icon::before{
-    background-image: url(./svg/view-dashboard.svg);
-    background-size: 100% 100%;
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    content: "";
-    position: relative;
-    /* left: -15px; */
-    margin-right: 15px;
-}
 
 .sidebar ul{
     display: grid;
     gap: 15px;
     list-style: none;
-}
-
-.sidebar ul li::before{
-    background-size: 100% 100%;
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    content: "";
-    position: relative;
-    /* left: -15px; */
-    margin-right: 15px;
-}
-.homeicon::before{
-    background-image: url(./svg/home.svg);
-}
-.profileicon::before{
-    background-image: url(./svg/card-account-details-outline.svg);
-}.messageicon::before{
-    background-image: url(./svg/message-reply-outline.svg);
-}.historyicon::before{
-    background-image: url(./svg/clock-time-three-outline.svg);
-}.tasksicon::before{
-    background-image: url(./svg/file-multiple.svg);
-}.communitiesicon::before{
-    background-image: url(./svg/account-group.svg);
-}.settingsicon::before{
-    background-image: url(./svg/cog.svg);
-}.supporticon::before{
-    background-image: url(./svg/help-box.svg);
-}.privacyicon::before{
-    background-image: url(./svg/shield-check.svg);
 }
 
 .main{
@@ -233,3 +191,47 @@ header h1{
     border-radius: 30px;
     background-color: darkcyan;
 }
+
+@media (min-width: 1350px) {
+    .dash-icon::before{
+        background-image: url(./svg/view-dashboard.svg);
+        background-size: 100% 100%;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        content: "";
+        position: relative;
+        /* left: -15px; */
+        margin-right: 15px;
+    }
+    .sidebar ul li::before{
+        background-size: 100% 100%;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        content: "";
+        position: relative;
+        /* left: -15px; */
+        margin-right: 15px;
+    }
+    .homeicon::before{
+        background-image: url(./svg/home.svg);
+    }
+    .profileicon::before{
+        background-image: url(./svg/card-account-details-outline.svg);
+    }.messageicon::before{
+        background-image: url(./svg/message-reply-outline.svg);
+    }.historyicon::before{
+        background-image: url(./svg/clock-time-three-outline.svg);
+    }.tasksicon::before{
+        background-image: url(./svg/file-multiple.svg);
+    }.communitiesicon::before{
+        background-image: url(./svg/account-group.svg);
+    }.settingsicon::before{
+        background-image: url(./svg/cog.svg);
+    }.supporticon::before{
+        background-image: url(./svg/help-box.svg);
+    }.privacyicon::before{
+        background-image: url(./svg/shield-check.svg);
+    }
+  }
