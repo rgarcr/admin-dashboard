@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+body{
+    height: 100vh;
+    box-sizing: border-box;
+}
+.grid-container{
+    height: 100%;
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
+
+}
+
+.icon-svg, .notificationicon{
+    width: 30px;
+    height: 30px;
+    justify-self: center;
+}
+
+header{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+}
+
+header ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+}
+
+.bottom-header div, .top-header label{
+    justify-self: center;
+}
+header .top-header, header .bottom-header{
+    display: grid;
+    grid-template-columns: auto 2fr 1fr;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+header .top-header input[type=search] {
+    border-radius: 15px;
+    background-color: #ededed;
+    height: 40px;
+}
+
+header .bottom-header h1 span{
+    display: block;
+    font-size: calc(15px + 0.390625vw);
+}
+
+header .bottom-header ul{
+    gap: 10px;
+}
+
+header .bottom-header ul li{
+    border-radius: 13px;
+    background-color: #3082e9;
+    color: white;
+    font-size: calc(15px + 0.390625vw);
+    padding: 7px;
+}
+
+header h1{
+    font-size: calc(20px + 0.390625vw);
+}
+
+
+.sidebar{
+    /* padding: 20px; */
+    font-size: calc(25px + 0.390625vw);
+    color: white;
+    background-color: #3082e9;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-rows: 10% 35% 20%;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .dashboard{
+    font-size: calc(30px + 0.390625vw);
+}
+
+.dash-icon::before{
+    background-image: url(./svg/view-dashboard.svg);
+    background-size: 100% 100%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    content: "";
+    position: relative;
+    /* left: -15px; */
+    margin-right: 15px;
+}
+
+.sidebar ul{
+    display: grid;
+    gap: 15px;
+    list-style: none;
+}
+
+.sidebar ul li::before{
+    background-size: 100% 100%;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    content: "";
+    position: relative;
+    /* left: -15px; */
+    margin-right: 15px;
+}
+.homeicon::before{
+    background-image: url(./svg/home.svg);
+}
+.profileicon::before{
+    background-image: url(./svg/card-account-details-outline.svg);
+}.messageicon::before{
+    background-image: url(./svg/message-reply-outline.svg);
+}.historyicon::before{
+    background-image: url(./svg/clock-time-three-outline.svg);
+}.tasksicon::before{
+    background-image: url(./svg/file-multiple.svg);
+}.communitiesicon::before{
+    background-image: url(./svg/account-group.svg);
+}.settingsicon::before{
+    background-image: url(./svg/cog.svg);
+}.supporticon::before{
+    background-image: url(./svg/help-box.svg);
+}.privacyicon::before{
+    background-image: url(./svg/shield-check.svg);
+}
+
+.main{
+    background-color: #ededed;
+}
+
+.main{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 40px 20px;
+}
+
+.main .main-middle{
+    grid-row: 1/ span 2;
+}
+
+.main .main-middle, .main-topright, .main-bottomright{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    overflow-wrap: anywhere;
+}
+
+.main .projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    gap: 25px;
+
+}
+
+.main .project, .announcements, .trends{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.main .main-bottomright{
+    grid-column-start: 2;
+}
+
+
+.main .announcements{
+    padding: 15px;
+    display: grid;
+    gap:10px;
+    align-items: center;
+}
+
+.ann-1, .ann-2{
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+
+.main .trends{
+    padding: 15px;
+    display: grid;
+    gap:10px;
+    align-items: center;
+}
+
+.main .trending{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main .project{
+    display: grid;
+    padding: 15px;
+    overflow-wrap: anywhere;
+    border-left: 10px solid rgb(229 191 49)
+}
+
+.main .project ul{
+    justify-self: end;
+    align-self: end;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);justify-items:end;
+}
+
+.main .project img{
+    height: 30px;
+    width: 50px;
+}
+
+.profile-icon, .profile-icon img{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    background-color: darkcyan;
+}
