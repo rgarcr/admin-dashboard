@@ -161,12 +161,12 @@ header h1{
     display: grid;
     grid-template-rows: auto 1fr;
     gap: 20px;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
 }
 
 .main .projects{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
     gap: 25px;
 
 }
